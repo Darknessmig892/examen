@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Validacion</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+
+	<script>
+		function comprobarClave() {
+			clave1 = document.f1.clave1.value
+			clave2 = document.f1.clave2.value
+
+			if (clave1 == "elmer" && clave2 == "examen"){
+				alert("Los datos coinciden...\n Bienvenido Trabajador");
+				var href = "./trabajadores.html";
+				window.location=href;
+			}
+
+			else{
+				alert("Error...\n contraseña incorrecta");
+				var href = "https://youtu.be/dQw4w9WgXcQ";
+				window.location=href;
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<body style="background-color:#4D4D4D;">
+	</body>
+	<br>
+	<h1><i><b>Ingrese el Usuario y la Contraseña de los trabajadores</b></i></h1>
+
+	<br>
+	<form action="" name="f1">
+		<center>
+			<hr color="black">
+			<br>
+			<table>
+				<tr>
+					<td align="center">Usuario: <input type="Password" name="clave1" size="20">
+				<br><br>
+				    </td>
+				</tr>
+				<tr>
+					<td align="center">Contraseña: <input type="Password" name="clave2" size="20">
+				<br><br>
+				    </td>
+				</tr>
+				<tr>
+					<td align="center"><input type="button" value="Ingresar" onclick="comprobarClave()"></td>
+				</tr>
+			</table>
+			<br>
+		</center>
+		<hr color="black">
+	</form>
+
+	<center><img src="https://peru21.pe/resizer/rF0FOgkct1gRmR8DlldDc_VOJlc=/980x0/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/UTWZBY4DKJGK7IHBA6XWRXKDQQ.jpeg" width="370" height="300"></center><br>
+</body>
+</html>

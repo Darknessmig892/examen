@@ -1,0 +1,25 @@
+.nav-enlace{
+	display: inline-block;
+	background: Indigo;
+	color: #fff;
+	padding: 10px 30px;
+	text-decoration: none;
+}
+.nav-enlace:hover{
+	background: rosybrown;
+}
+nav{
+	background:  rebeccapurple;
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+	nav{
+		flex-direction: column;
+	}
+	.nav-enlace{
+		margin: 10px 0;
+	}
+}
